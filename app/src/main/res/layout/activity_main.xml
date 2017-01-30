@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/underfive"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_width="@dimen/drawer_image_icon"
+            android:src="@drawable/drawer"
+            android:layout_height="@dimen/drawer_image_icon" />\
+
+        <TextView
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:textColor="@color/white_color"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/header"
+        android:id="@+id/filterview"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:background="#293131">
+
+        <com.dynamic.lannet.dynamictextview.FlowLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"></com.dynamic.lannet.dynamictextview.FlowLayout>
+    </LinearLayout>
+</RelativeLayout>
